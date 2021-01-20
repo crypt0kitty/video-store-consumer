@@ -14,9 +14,6 @@ const Navbar = () => {
             <a href="sass.html">Home</a>
           </li>
           <li>
-            <a href="badges.html">Videos</a>
-          </li>
-          <li>
             <a href="collapsible.html">Video Library</a>
           </li>
           <li>
