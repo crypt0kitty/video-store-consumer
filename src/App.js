@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+import 'materialize-css/dist/css/materialize.min.css';
+
+import './App.css';
+import Customers from './components/Customers';
+
+function App() {
+  const [customers, setCustomers] = useState([]);
+
+  useEffect(() => {
+    /* fetch('https://api.themoviedb.org/3/movie/550?api_key=fab6e945ca8bd693a69acea57b30c0b9') */
+    fetch('http://localhost:3000/customers')
+      .then((res) => res.json())
+      .then((customers) => setCustomers(customers));
+  }, []);
+
+  return <div className="App">{<Customers customers={customers} />}</div>;
 }
 
 export default App;
