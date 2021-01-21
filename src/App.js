@@ -5,6 +5,8 @@ import './App.css';
 import Customers from './components/Customers';
 import Navbar from './components/Navbar';
 import VideoSearch from './components/VideoSearch';
+import Banner from './movieBanner.png';
+
 export default function App() {
   return (
     <Router>
@@ -32,7 +34,18 @@ export default function App() {
   );
 }
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <>
+      <div id="index-banner" className="parallax-container">
+        <div className="section no-pad-bot">
+          <div className="container">
+            <h1 className="header center teal-text text-lighten-2"></h1>
+          </div>
+        </div>
+        <img src={Banner} alt="Logo" className="parallax" />
+      </div>
+    </>
+  );
 }
 function VideoLibrary() {
   return <h2>All Movies</h2>;

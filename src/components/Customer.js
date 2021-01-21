@@ -29,7 +29,7 @@ const Customer = ({
         </div>
         <div className="card-action">
           <a href="#">Account Credits - {accountCredit}</a>
-          <a href="#">Vidoes Checked Out - {videosCheckedOutCount}</a>
+          <a href="#">Videos Checked Out - {videosCheckedOutCount}</a>
         </div>
       </div>
     </div>
