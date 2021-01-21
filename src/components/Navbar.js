@@ -1,26 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import 'materialize-css/dist/css/materialize.min.css';
-// import { Link } from "react-router-dom";
+import './style.css';
+
+import Logo from '../movieLogo.png';
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="nav-wrapper">
-        <a href="#" className="brand-logo">
-          Logo
-        </a>
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li>
-            <a href="sass.html">Home</a>
-          </li>
-          <li>
-            <a href="collapsible.html">Video Library</a>
-          </li>
-          <li>
-            <a href="collapsible.html">Customers</a>
-          </li>
-        </ul>
-      </div>
+    <nav className="#26a69a teal lighten-1">
+      <Link to="/">
+        <img src={Logo} alt="Logo" className="brand-logo" />
+      </Link>
+      <ul id="nav-mobile" className="right hide-on-med-and-down">
+        {/* search bar ends */}
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/search">Search</Link>
+        </li>
+        <li>
+          <Link to="/library">Video Library</Link>
+        </li>
+        <li>
+          <Link to="/customers">Custormer List</Link>
+        </li>
+      </ul>
     </nav>
   );
 };
