@@ -23,7 +23,9 @@ const MovieCard = ({
       <div className="card blue-grey darken-1">
         <div className="card-content white-text">
           <span className="card-title">{title}</span>
+
           <p>{overview}</p>
+          <img src={`https://image.tmdb.org/t/p/w200${posterPath}`} />
         </div>
         <div className="card-action">
           <button
