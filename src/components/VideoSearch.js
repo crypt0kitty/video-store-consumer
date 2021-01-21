@@ -36,9 +36,11 @@ const VideoSearch = () => {
         </div>
       </div>
 
-      {searchResults.map((movie) => (
-        <MovieCard movie={movie} />
-      ))}
+      <div className="card-list">
+        {searchResults.map((movie) => (
+          <MovieCard movie={movie} />
+        ))}
+      </div>
     </>
   );
 };

@@ -4,6 +4,15 @@ body {
   font-family: sans-serif;
 }
 
+.main {
+  margin: 30px;
+  width: 300px;
+}
+
+.card-list {
+  display:flex;
+}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -25,8 +34,6 @@ body {
   max-height: 65px;
   max-width: 250px;
   margin-left: -60px;
-
-
- 
 }
+
  
