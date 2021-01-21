@@ -7,6 +7,11 @@ import registerServiceWorker from './registerServiceWorker';
 const Home = () => {
   return (
     <div>
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      ></link>
+
       <App />
     </div>
   );
