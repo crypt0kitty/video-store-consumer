@@ -20,9 +20,9 @@ export default function App() {
             <h2>All Customers</h2>
             <Customers />
           </Route>
-          {/* <Route path="/search">
+          <Route path="/search">
             <VideoSearch />
-          </Route> */}
+          </Route>
           <Route path="/">
             <Home />
           </Route>
