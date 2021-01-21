@@ -7,7 +7,7 @@ import Logo from '../movieLogo.png';
 
 const Navbar = () => {
   return (
-    <nav className="#26a69a teal lighten-1">
+    <nav className="#26a69a teal lighten-1 z-depth-3">
       <Link to="/">
         <img src={Logo} alt="Logo" className="brand-logo" />
       </Link>
