@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import MovieCard from './MovieCard';
+import axios from 'axios';
 
 const VideoSearch = () => {
   const [input, setInput] = useState();
@@ -14,9 +15,12 @@ const VideoSearch = () => {
   };
 
   const getMovies = async () => {
-    const { results } = await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=fab6e945ca8bd693a69acea57b30c0b9&language=en-US&page=1&include_adult=false&query=${input}`
-    ).then((response) => response.json());
+    const results = await axios.get(
+      `http://localhost:3000/videos?query=${input}`
+    ).then((response) => {
+      console.log(response)
+      return response.data
+    })
     setSearchResults(results);
   };
 
