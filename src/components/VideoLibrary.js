@@ -15,7 +15,7 @@ function VideoLibrary() {
   console.log(videos);
 
   return (
-    <div className="VideosList">
+    <div className="card-list">
       {videos.map((video) => (
         <Video key={video.id} video={video} />
       ))}

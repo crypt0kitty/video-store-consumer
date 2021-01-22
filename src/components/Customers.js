@@ -15,10 +15,12 @@ function CustomerList() {
   // console.log(customers);
 
   return (
-    <div className="CustomerList">
-      {customers.map((customer) => (
-        <Customer key={customer.id} customer={customer} />
-      ))}
+    <div className="container">
+      <div className="card-list-cus">
+        {customers.map((customer) => (
+          <Customer key={customer.id} customer={customer} />
+        ))}
+      </div>
     </div>
   );
 }

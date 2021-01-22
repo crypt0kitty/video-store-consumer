@@ -6,6 +6,7 @@ body {
   font-family: 'Balsamiq Sans', cursive;
   font-family: 'EB Garamond', serif;
   font-family: 'Libre Baskerville', serif;
+  min-height: 100vh;
 }
 
 .material-icons {
@@ -13,12 +14,10 @@ body {
   padding: 0 10px;
 }
 
-
 .main {
   margin: 30px;
   width: 250px;
 }
-
 
 .movieTitle {
   color:#004d40;
@@ -26,10 +25,35 @@ body {
   font-weight: bolder;
 }
 .card-list {
+  /* height: 100px; */
   display:flex;
   flex-wrap:wrap;
-  
-}
+  justify-content: space-evenly;
+  padding-top: 60px;
+  }
+
+  .card-list-cus{
+    display:flex;
+    flex-wrap:wrap;
+    height: 100px;
+    padding-left: 10px;
+  }
+
+  .container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+
+  }
+  .card-title{
+  color:#004d40;
+  font-weight: bolder; 
+
+  }
+
+  .customer-padding{
+    padding-top: 40px;
+  }
 
 .parallax-container {
   min-height: 380px;
@@ -54,7 +78,5 @@ body {
   margin-left: -60px;
 }
 
-.waves-effect .waves-light .btn
-{
-  
-}
+
+

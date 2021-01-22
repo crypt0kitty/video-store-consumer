@@ -22,24 +22,26 @@ const VideoSearch = () => {
 
   return (
     <>
-      <div className="row">
-        <div className="input-field col s12">
-          <input
-            id="searchMovies"
-            type="text"
-            className="validate"
-            onChange={handleChange}
-            onKeyDown={handleKeyDown}
-            value={input}
-            placeholder="Search Movies"
-          />
+      <div className="customer-padding">
+        <div className="row">
+          <div className="input-field col s12">
+            <input
+              id="searchMovies"
+              type="text"
+              className="validate"
+              onChange={handleChange}
+              onKeyDown={handleKeyDown}
+              value={input}
+              placeholder="Search Movies"
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="card-list">
-        {searchResults.map((movie) => (
-          <MovieCard movie={movie} />
-        ))}
+        <div className="card-list">
+          {searchResults.map((movie) => (
+            <MovieCard movie={movie} />
+          ))}
+        </div>
       </div>
     </>
   );

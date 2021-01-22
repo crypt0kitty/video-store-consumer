@@ -25,7 +25,7 @@ const Navbar = () => {
             <Link to="/library">Video Library</Link>
           </li>
           <li>
-            <Link to="/customers">Custormer List</Link>
+            <Link to="/customers">Customer List</Link>
           </li>
         </ul>
       </nav>

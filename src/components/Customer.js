@@ -1,4 +1,5 @@
 import React from 'react';
+import 'materialize-css/dist/css/materialize.min.css';
 import '../index.css';
 
 const Customer = ({
@@ -15,22 +16,21 @@ const Customer = ({
     videos_checked_out_count: videosCheckedOutCount,
   },
 }) => (
-  <div className="row">
-    <div className="col s12 m6">
-      <div className="card blue-grey darken-1">
-        <div className="card-content white-text">
-          <span className="card-title">
-            {id} - {name} - {registeredAt}
-          </span>
-          <p>
-            I am a very simple card. I am good at containing small bits of
-            information. I am convenient because I require little markup to use
-            effectively.
-          </p>
-        </div>
-        <div className="card-action">
-          <a href="#">Account Credits - {accountCredit}</a>
-          <a href="#">Videos Checked Out - {videosCheckedOutCount}</a>
+  <div className="customer-padding">
+    <div className="row ">
+      <div className="col s12 m10 ">
+        <div className="card teal lighten-2">
+          <div className="card-content grey lighten-4">
+            <span className="card-title">
+              {id} - {name}
+            </span>
+          </div>
+          <div className="card-list-cus">
+            <p className="cusText">
+              Account Credits - {accountCredit}
+              Videos Checked Out - {videosCheckedOutCount}
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -20,8 +20,8 @@ export default function App() {
             <VideoLibrary />
           </Route>
           <Route path="/customers">
-            <h2>All Customers</h2>
             <Customers />
+            <br></br> <br></br>
           </Route>
           <Route path="/search">
             <VideoSearch />
@@ -45,6 +45,29 @@ function Home() {
         </div>
         <img src={Banner} alt="Logo" className="parallax" />
       </div>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Why Rent With Us?</h5>
+              <p class="grey-text text-lighten-4">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text. All the Lorem Ipsum generators on
+                the Internet
+              </p>
+            </div>
+            <h5 class="white-text"></h5>
+          </div>
+        </div>
+        {/* </div> */}
+        <div class="footer-copyright">
+          <div class="container">© 2021 Copyright Text</div>
+        </div>
+      </footer>
     </>
   );
 }
