@@ -5,6 +5,7 @@ import './App.css';
 import Customers from './components/Customers';
 import Navbar from './components/Navbar';
 import VideoSearch from './components/VideoSearch';
+import VideoLibrary from './components/VideoLibrary';
 import Banner from './movieBanner.png';
 
 export default function App() {
@@ -47,9 +48,9 @@ function Home() {
     </>
   );
 }
-function VideoLibrary() {
-  return <h2>All Movies</h2>;
-}
+// function VideoLibrary() {
+//   return <h2>All Movies</h2>;
+// }
 function MovieSearch() {
   return <h2>Search</h2>;
 }
