@@ -1,7 +1,7 @@
 import Customer from './Customer';
 import React, { useState, useEffect } from 'react';
 
-function Customers() {
+function CustomerList() {
   const [customers, setCustomers] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ function Customers() {
   // console.log(customers);
 
   return (
-    <div className="Customers">
+    <div className="CustomerList">
       {customers.map((customer) => (
         <Customer key={customer.id} customer={customer} />
       ))}
@@ -23,4 +23,4 @@ function Customers() {
   );
 }
 
-export default Customers;
+export default CustomerList;
