@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import 'materialize-css/dist/css/materialize.min.css';
+import '../index.css';
 
 import Logo from '../movieLogo.png';
 
@@ -28,6 +29,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+
       {/* banner for homepage */}
     </>
   );
