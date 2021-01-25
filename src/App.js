@@ -71,9 +71,3 @@ function Home() {
     </>
   );
 }
-// function VideoLibrary() {
-//   return <h2>All Movies</h2>;
-// }
-function MovieSearch() {
-  return <h2>Search</h2>;
-}

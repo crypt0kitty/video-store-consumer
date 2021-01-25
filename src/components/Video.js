@@ -2,17 +2,11 @@ import React from 'react';
 import '../index.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import Moment from 'moment';
-import axios from 'axios';
 
 const Video = ({ video }) => {
   const { title, release_date: releaseDate, image_url: imageUrl } = video;
-  axios
-    .post('http://localhost:3000/videos', video)
-    .then((response) => {})
-    .catch((error) => {});
 
-  const date = Moment('2018-05-18T04:00:00.000Z').format('MMM, DD, YYYY');
-  console.log(date);
+  const date = Moment(releaseDate).format('MMM, DD, YYYY');
 
   return (
     <div className="main card rounded">

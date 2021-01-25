@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import Video from './Video';
+import axios from 'axios';
 
 function VideoLibrary() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/videos')
+    axios
+      .get('http://localhost:3000/videos')
       // converting the data into json
-      .then((response) => response.json())
-      // received data as customers
-      .then((videos) => setVideos(videos));
+      .then((response) => {
+        setVideos(response.data);
+      });
+    // received data as customers
   }, []);
 
   return (

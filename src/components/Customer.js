@@ -31,6 +31,14 @@ const Customer = ({
               Videos Checked Out - {videosCheckedOutCount}
             </p>
           </div>
+          <box className="button">
+            <button
+              className="waves-effect waves-block waves-light z-depth-2"
+              // onClick={addVideoToLibrary}
+            >
+              Add to Video Library
+            </button>
+          </box>
         </div>
       </div>
     </div>
