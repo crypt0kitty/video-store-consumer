@@ -15,12 +15,11 @@ const VideoSearch = () => {
   };
 
   const getMovies = async () => {
-    const results = await axios.get(
-      `http://localhost:3000/videos?query=${input}`
-    ).then((response) => {
-      console.log(response)
-      return response.data
-    })
+    const results = await axios
+      .get(`http://localhost:3000/videos?query=${input}`)
+      .then((response) => {
+        return response.data;
+      });
     setSearchResults(results);
   };
 

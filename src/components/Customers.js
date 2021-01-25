@@ -1,18 +1,17 @@
 import Customer from './Customer';
 import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
 
-function CustomerList() {
+const CustomerList = () => {
   const [customers, setCustomers] = useState([]);
 
   useEffect(() => {
-    /* data from: https://api.themoviedb.org/3/movie/550?api_key=fab6e945ca8bd693a69acea57b30c0b9 */
     fetch('http://localhost:3000/customers')
       // converting the data into json
       .then((response) => response.json())
       // received data as customers
       .then((customers) => setCustomers(customers));
   }, []);
-  // console.log(customers);
 
   return (
     <div className="container">
@@ -23,6 +22,6 @@ function CustomerList() {
       </div>
     </div>
   );
-}
+};
 
 export default CustomerList;
