@@ -14,7 +14,6 @@ const CustomerList = () => {
         // console.log(response);
       });
     // received data as customers
-    // .then((customers) => setCustomers(customers));
   }, []);
 
   return (
