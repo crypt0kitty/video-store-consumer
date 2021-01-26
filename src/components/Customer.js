@@ -36,7 +36,7 @@ const Customer = ({
               className="waves-effect waves-block waves-light z-depth-2"
               // onClick={addVideoToLibrary}
             >
-              Add to Video Library
+              Select Customer
             </button>
           </box>
         </div>
