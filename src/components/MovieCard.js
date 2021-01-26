@@ -1,5 +1,5 @@
-import React from 'react';
 import '../index.css';
+import React, { useState, useEffect } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import axios from 'axios';
 
@@ -11,6 +11,9 @@ const MovieCard = ({ movie }) => {
       .then((response) => {})
       .catch((error) => {});
   };
+
+  const [titles, setTitle] = useState('Add to Video Library');
+
   return (
     <div className="main">
       <div className="movieTitle">{title}</div>
@@ -25,9 +28,12 @@ const MovieCard = ({ movie }) => {
         <box className="button">
           <button
             className="waves-effect waves-light btn-small"
-            onClick={addVideoToLibrary}
+            onClick={() => {
+              addVideoToLibrary();
+              setTitle('Added to Library!');
+            }}
           >
-            Add to Video Library
+            {titles}
           </button>
         </box>
       </div>
