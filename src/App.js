@@ -45,12 +45,12 @@ function Home() {
         </div>
         <img src={Banner} alt="Logo" className="parallax" />
       </div>
-      <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Why Rent With Us?</h5>
-              <p class="grey-text text-lighten-4">
+      <footer className="page-footer">
+        <div className="container">
+          <div className="row">
+            <div className="col l6 s12">
+              <h5 className="white-text">Why Rent With Us?</h5>
+              <p className="grey-text text-lighten-4">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour, or randomised words which don't look even
@@ -60,12 +60,12 @@ function Home() {
                 the Internet
               </p>
             </div>
-            <h5 class="white-text"></h5>
+            <h5 className="white-text"></h5>
           </div>
         </div>
         {/* </div> */}
-        <div class="footer-copyright">
-          <div class="container">© 2021 Copyright Text</div>
+        <div className="footer-copyright">
+          <div className="container">© 2021 Copyright Text</div>
         </div>
       </footer>
     </>

@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=EB+Garamond&family=Libre+Baskerville&display=swap');
 
 body {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
   font-family: 'Balsamiq Sans', cursive;
-  font-family: 'EB Garamond', serif;
-  font-family: 'Libre Baskerville', serif;
-  min-height: 100vh;
+  background-color:peachpuff;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .material-icons {
   margin-top: 50px;
   padding: 0 10px;
-}
-
-.main {
-  margin: 30px;
-  width: 250px;
 }
 
 .movieTitle {
@@ -25,7 +22,6 @@ body {
   font-weight: bolder;
 }
 .card-list {
-  /* height: 100px; */
   display:flex;
   flex-wrap:wrap;
   justify-content: space-evenly;
@@ -73,7 +69,6 @@ body {
   font-weight: bolder; 
   }
 
-
   .movieTitle {
     text-align: center;
     padding-top: 15px;
@@ -89,13 +84,20 @@ body {
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
-
-
 }
-  .parallax-container .parallax {
-    width: 100%;
 
+.parallax {
+  top: 0;
+  position: fixed;
+  width: 100%;  
 }
+
+.image-banner {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 60px 0;
+} 
 
   .brand-text {
     margin-left: 80px;
@@ -107,6 +109,12 @@ body {
   max-height: 65px;
   max-width: 250px;
   margin-left: -60px;
+}
+
+.page-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 
