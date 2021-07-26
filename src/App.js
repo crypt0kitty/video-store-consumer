@@ -45,7 +45,6 @@ function Home() {
         </div>
         <img src={Banner} alt="Logo" className="parallax" />
       </div>
-      <footer className="page-footer">
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
@@ -64,10 +63,9 @@ function Home() {
           </div>
         </div>
         {/* </div> */}
-        <div className="footer-copyright">
-          <div className="container">© 2021 Copyright Text</div>
+        <div className="footer-copyright, page-footer">
+          <div className="container">© 2021 Sandy Vasquez</div>
         </div>
-      </footer>
     </>
   );
 }
