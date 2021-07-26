@@ -11,6 +11,10 @@ main {
   flex: 1 0 auto;
 }
 
+.movies {
+  background-color: peachpuff;
+
+}
 .material-icons {
   margin-top: 50px;
   padding: 0 10px;
@@ -115,6 +119,7 @@ main {
   position: fixed;
   width: 100%;
   bottom: 0;
+  background-color:rgb(250, 123, 123);
 }
 
 

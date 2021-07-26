@@ -19,7 +19,6 @@ const Video = ({ video }) => {
         <p className="date-text">{date}</p>
       </div>
     </div>
-    // </div>
   );
 };
 
