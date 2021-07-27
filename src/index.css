@@ -4,7 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Balsamiq Sans', cursive;
-  background-color:rgb(250, 123, 123);
+  background-color: #f59090;
 }
 
 main {
@@ -12,7 +12,7 @@ main {
 }
 
 .movies {
-  background-color: peachpuff;
+  background-color: pea;
 
 }
 .material-icons {
