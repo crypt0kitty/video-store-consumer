@@ -7,7 +7,8 @@ const MovieCard = ({ movie }) => {
   const { overview, title, image_url: imageUrl } = movie;
   const addVideoToLibrary = () => {
     axios
-      .post('http://localhost:3000/videos', movie)
+      // .post('http://localhost:3000/videos', movie)
+      .post('https://video-store-01.herokuapp.com/videos', movie)
       .then((response) => {})
       .catch((error) => {});
   };

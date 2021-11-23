@@ -16,7 +16,8 @@ const VideoSearch = () => {
 
   const getMovies = async () => {
     const results = await axios
-      .get(`http://localhost:3000/videos?query=${input}`)
+      // .get(`http://localhost:3000/videos?query=${input}`)
+      .get(`https://video-store-01.herokuapp.com/videos?query=${input}`)
       .then((response) => {
         return response.data;
       });

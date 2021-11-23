@@ -7,7 +7,7 @@ function VideoLibrary() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/videos')
+      .get('https://video-store-01.herokuapp.com/videos')
       // converting the data into json
       .then((response) => {
         setVideos(response.data);
