@@ -17,7 +17,7 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .listen(process.env.PORT || 3001, process.env.HOST || '::', () => console.log(`Listening on ${ PORT }`))
+  .listen(process.env.PORT || 3000, process.env.HOST || '::', () => console.log(`Listening on ${ PORT }`))
 
 export default function App() {
   return (
