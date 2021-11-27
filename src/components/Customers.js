@@ -8,7 +8,7 @@ const CustomerList = () => {
   useEffect(() => {
     axios
       // .get('http://localhost:3000/customers')
-      .get('https://git.heroku.com/video-store-backend-01.git/customers')
+      .get('https://video-store-backend-01.herokuapp.com/customers')
       // converting the data into json
       .then((response) => {
         setCustomers(response.data);
