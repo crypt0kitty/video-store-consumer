@@ -8,16 +8,6 @@ import VideoSearch from './components/VideoSearch';
 import VideoLibrary from './components/VideoLibrary';
 import Banner from './movieBanner.png';
 
-const express = require('express')
-const path = require('path')
-const PORT = process.env.PORT;
-
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
-  .listen(process.env.PORT || 3001, process.env.HOST || '::', () => console.log(`Listening on ${ PORT }`))
 
 export default function App() {
   return (
