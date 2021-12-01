@@ -16,7 +16,6 @@ const VideoSearch = () => {
 
   const getMovies = async () => {
     const results = await axios
-      // .get(`http://localhost:3000/videos?query=${input}`)
       .get(`https://video-store-backend-01.herokuapp.com/videos?query=${input}`)
       .then((response) => {
         return response.data;
@@ -41,10 +40,12 @@ const VideoSearch = () => {
           </div>
         </div>
 
-        <div className="card-list">
-          {searchResults.map((movie) => (
-            <MovieCard movie={movie} />
-          ))}
+        <div className="container">
+          <div className="videoSearchContainer">
+            {searchResults.map((movie) => (
+              <MovieCard movie={movie} />
+            ))}
+          </div>
         </div>
       </div>
     </>

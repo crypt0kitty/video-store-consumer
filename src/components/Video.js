@@ -9,11 +9,12 @@ const Video = ({ video }) => {
   const date = Moment(releaseDate).format('MMM, DD, YYYY');
 
   return (
-    <div className="main card rounded">
-      <div className="card-image waves-effect waves-block waves-light">
+    <div className="main card">
+      <div className="card-image waves-effect waves-block">
         <img src={imageUrl} />
         <div className="movieTitle">{title}</div>
       </div>
+
       <div className="card-content">
         <span className="card-title grey-text text-darken-4"></span>
         <p className="date-text">{date}</p>

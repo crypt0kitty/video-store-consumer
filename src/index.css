@@ -13,7 +13,6 @@ main {
 
 .movies {
   background-color: pea;
-
 }
 .material-icons {
   margin-top: 50px;
@@ -21,79 +20,74 @@ main {
 }
 
 .movieTitle {
-  color:#004d40;
+  color: #004d40;
   font-size: larger;
   font-weight: bolder;
 }
+
 .card-list {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 60px;
+}
 
-  }
+.button {
+  display: flex;
+  justify-content: center;
+}
 
-  .card-list-cus{
-    display:flex;
-    flex-wrap:wrap;
-    height: 100px;
-    padding-left: 10px;
+.card {
+  padding: 10px;
+}
 
-  }
+.date-text {
+  text-align: center;
+  color: #138f7a;
+  font-weight: bold;
+}
 
-  .card-image {
-    border-radius: 20px;
-  }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .button {
-    display: flex;
-    justify-content: center;
-    
-  }
+.videoSearchContainer {
+  flex-basis: 400px;
+}
 
-  .card {
-    padding: 10px;
-  }
+.card-list-cus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .date-text {
-    text-align: center;
-    color:#138f7a;
-    font-weight: bold;
+.card-title {
+  color: #004d40;
+  font-weight: bolder;
+}
 
-  }
- 
-  .container {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-  }
+.movieTitle {
+  text-align: center;
+  padding-top: 15px;
+}
 
-  .card-title{
-  color:#004d40;
-  font-weight: bolder; 
-  }
-
-  .movieTitle {
-    text-align: center;
-    padding-top: 15px;
-    
-  }
-
-  .customer-padding{
-    padding-top: 40px;
-  }
+.customer-padding {
+  padding-top: 40px;
+}
 
 .parallax-container {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .parallax {
   top: 0;
   position: fixed;
-  width: 100%;  
+  width: 100%;
 }
 
 .image-banner {
@@ -101,11 +95,11 @@ main {
   position: fixed;
   width: 100%;
   padding: 60px 0;
-} 
+}
 
-  .brand-text {
-    margin-left: 80px;
-  }
+.brand-text {
+  margin-left: 80px;
+}
 
 .brand-logo {
   height: auto;
@@ -119,8 +113,5 @@ main {
   position: fixed;
   width: 100%;
   bottom: 0;
-  background-color:rgb(250, 123, 123);
+  background-color: rgb(250, 123, 123);
 }
-
-
-

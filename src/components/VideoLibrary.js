@@ -16,10 +16,12 @@ function VideoLibrary() {
   }, []);
 
   return (
-    <div className="card-list">
-      {videos.map((video) => (
-        <Video key={video.id} video={video} />
-      ))}
+    <div className="container">
+      <div className="card-list">
+        {videos.map((video) => (
+          <Video key={video.id} video={video} />
+        ))}
+      </div>
     </div>
   );
 }
