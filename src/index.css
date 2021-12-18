@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=EB+Garamond&family=Libre+Baskerville&display=swap');
 
 body {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Balsamiq Sans', cursive;
+  margin: 0;
   background-color: #f59090;
 }
 
@@ -78,15 +76,13 @@ main {
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
+  /* min-height: 380px; */
+  /* line-height: 0; */
+  /* height: 100%; */
   color: rgba(255, 255, 255, 0.9);
 }
 
 .parallax {
-  top: 0;
-  position: fixed;
   width: 100%;
 }
 

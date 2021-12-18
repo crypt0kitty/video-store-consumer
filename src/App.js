@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import 'materialize-css/dist/css/materialize.min.css';
 import './App.css';
 import Customers from './components/Customers';
-import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 import VideoSearch from './components/VideoSearch';
 import VideoLibrary from './components/VideoLibrary';
 import Banner from './movieBanner.png';
@@ -11,7 +11,7 @@ import Banner from './movieBanner.png';
 export default function App() {
   return (
     <Router>
-      <Navbar />
+      <Sidebar />
       <div>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
