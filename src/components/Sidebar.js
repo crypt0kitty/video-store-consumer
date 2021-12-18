@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import 'materialize-css/dist/css/materialize.min.css';
 import '../App.css';
 import Logo from '../movieLogo.png';
 import { bubble as Menu } from 'react-burger-menu';
