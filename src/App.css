@@ -1,3 +1,6 @@
+html, body { height: 100% }
+
+
 .App {
   text-align: center;
 }
@@ -96,3 +99,30 @@
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
   box-shadow:  2px 2px 0 rgb(0 0 0 / 14%)
 }
+
+.footer{
+position:absolute;
+left:0;
+bottom:0;
+right:0;
+padding: 1rem;
+text-align: center;
+background-color: rgb(245, 229, 84);
+  
+}
+
+.home {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#about-text {
+  text-align: justify;
+}
+

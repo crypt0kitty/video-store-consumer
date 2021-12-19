@@ -5,6 +5,7 @@ body {
   background-color: #f59090;
 }
 
+
 main {
   flex: 1 0 auto;
 }
@@ -49,6 +50,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+}
+
+.test {
+  padding-bottom:60px;
 }
 
 .videoSearchContainer {
@@ -75,12 +81,12 @@ main {
   padding-top: 40px;
 }
 
-.parallax-container {
+/* .parallax-container { */
   /* min-height: 380px; */
   /* line-height: 0; */
   /* height: 100%; */
-  color: rgba(255, 255, 255, 0.9);
-}
+  /* color: rgba(255, 255, 255, 0.9); */
+/* } */
 
 .parallax {
   width: 100%;
@@ -103,12 +109,5 @@ main {
   max-height: 65px;
   max-width: 250px;
   margin-left: -60px;
-}
-
-.page-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  background-color: rgb(250, 123, 123);
 }
 

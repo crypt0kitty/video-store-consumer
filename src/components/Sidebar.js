@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import '../App.css';
-import Logo from '../movieLogo.png';
 import { bubble as Menu } from 'react-burger-menu';
 import { BiHome, BiFilm, BiSearchAlt, BiGroup} from 'react-icons/bi';
-
-
 
 export default function Sidebar() {
    return(
@@ -16,7 +13,6 @@ export default function Sidebar() {
             <a id="contact" className="menu-item" href="/library"><BiFilm /> Video Library</a>
             <a id="settings" className="menu-item" href="/customers"> <BiGroup /> Customer List</a>
        </Menu>
-
    )
 }
 
