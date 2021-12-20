@@ -9,7 +9,7 @@ const Video = ({ video }) => {
   const date = Moment(releaseDate).format('MMM, DD, YYYY');
 
   return (
-    <div className="main card">
+    <div className="card videoLibraryContainer">
       <div className="card-image waves-effect waves-block">
         <img src={imageUrl} />
         <div className="movieTitle">{title}</div>

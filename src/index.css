@@ -36,7 +36,7 @@ main {
 }
 
 .card {
-  padding: 10px;
+  padding: 15px;
 }
 
 .date-text {
@@ -52,7 +52,11 @@ main {
 }
 
 .videoSearchContainer {
-  flex-basis: 400px;
+  flex-basis: 300px;
+}
+
+.videoLibraryContainer {
+  flex-basis: 220px;
 }
 
 .card-list-cus {
@@ -76,9 +80,6 @@ main {
 }
 
 .parallax-container {
-  /* min-height: 380px; */
-  /* line-height: 0; */
-  /* height: 100%; */
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -111,4 +112,11 @@ main {
   bottom: 0;
   background-color: rgb(250, 123, 123);
 }
+
+@media only screen and (max-width: 500px) {
+  .videoLibraryContainer {
+    flex-basis: 290px;
+  }
+}
+
 
