@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Video from './Video';
 import axios from 'axios';
 
-function VideoLibrary() {
+function VideoLibrary(props) {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,8 @@ function VideoLibrary() {
     <div className="container">
       <div className="card-list">
         {videos.map((video) => (
-          <Video key={video.id} video={video} />
+          <Video currCard = {props.currCard} setCurrCard = {props.setCurrCard} key={video.id} video={video} />
+
         ))}
       </div>
     </div>

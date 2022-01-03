@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 /* what part of the code should be nested inside the router */
 import 'materialize-css/dist/css/materialize.min.css';
 import './App.css';
@@ -7,17 +8,21 @@ import Sidebar from './components/Sidebar';
 import VideoSearch from './components/VideoSearch';
 import VideoLibrary from './components/VideoLibrary';
 import Banner from './movieBanner.png';
+import Checkout from './components/Checkout.js'
 
 export default function App() {
+  const [currCard, setCurrCard] = useState({})
+
   return (
     <Router>
+      <Checkout image = {currCard.image} title = {currCard.title} />
       <Sidebar />
       <div>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/library">
-            <VideoLibrary />
+            <VideoLibrary currCard = {currCard} setCurrCard = {setCurrCard}/>
           </Route>
           <Route path="/customers">
             <Customers />
@@ -34,6 +39,7 @@ export default function App() {
     </Router>
   );
 }
+
 function Home() {
   return (
     <>

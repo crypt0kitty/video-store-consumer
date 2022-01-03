@@ -24,15 +24,17 @@ const MovieCard = ({ movie }) => {
         </div>
         <div className="card-content">
           <span className="card-title activator grey-text text-darken-4"></span>
-          <p>{overview.substring(100, 0)}</p>
+          <p>{overview.substring(300, 0)}</p>
         </div>
         <box className="button">
+          
           <button
             className="waves-effect waves-light btn-small"
             onClick={() => {
               addVideoToLibrary();
               setTitle('Added to Library!');
             }}
+            
           >
             {titles}
           </button>
