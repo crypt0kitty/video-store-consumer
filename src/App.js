@@ -15,7 +15,7 @@ export default function App() {
 
   return (
     <Router>
-      <Checkout image = {currCard.image} title = {currCard.title} />
+      <Checkout text = {currCard.text} title = {currCard.title} />
       <Sidebar />
       <div>
         {/* A <Switch> looks through its children <Route>s and

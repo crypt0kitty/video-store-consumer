@@ -1,15 +1,10 @@
 
-
-
-
-
 const Checkout = (props) =>{
     return(
         <div>
-            <h2>
-                {props.title}
-            </h2>
-            <img src = {props.image}/>
+            <h5 class="card-title"><span id="selected-text">Selected video:</span>{props.title}
+            </h5>
+            {/* <img src = {props.image}/> */}
         </div>
     )
 }
