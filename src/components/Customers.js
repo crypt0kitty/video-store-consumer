@@ -4,10 +4,11 @@ import axios from 'axios';
 
 const CustomerList = () => {
   const [customers, setCustomers] = useState([]);
+  const BASE_API_URL = process.env.NODE_ENV.trim() === 'production' ? 'https://video-store-backend-01.herokuapp.com' : 'http://127.0.0.1:3000';
 
   useEffect(() => {
-    axios
-      .get('https://video-store-backend-01.herokuapp.com/customers')
+    axios      
+      .get(`${BASE_API_URL}/customers`)
       // converting the data into json
       .then((response) => {
         setCustomers(response.data);

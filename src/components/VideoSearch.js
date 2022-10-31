@@ -14,9 +14,13 @@ const VideoSearch = () => {
     }
   };
 
+  const BASE_API_URL = process.env.NODE_ENV.trim() === 'production' ? 'https://video-store-backend-01.herokuapp.com' : 'http://127.0.0.1:3000';
+
+  console.log(`BASE_API_URL: ${BASE_API_URL}`);
+
   const getMovies = async () => {
     const results = await axios
-      .get(`https://video-store-backend-01.herokuapp.com/videos?query=${input}`)
+      .get(`${BASE_API_URL}/videos?query=${input}`)
       .then((response) => {
         return response.data;
       });

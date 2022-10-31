@@ -5,10 +5,11 @@ import axios from 'axios';
 
 const MovieCard = ({ movie }) => {
   const { overview, title, image_url: imageUrl } = movie;
+  const BASE_API_URL = process.env.NODE_ENV.trim() === 'production' ? 'https://video-store-backend-01.herokuapp.com' : 'http://127.0.0.1:3000';
+
   const addVideoToLibrary = () => {
-    axios
-      // .post('http://localhost:3000/videos', movie)
-      .post('https://video-store-backend-01.herokuapp.com/videos', movie)
+    axios            
+      .post(`${BASE_API_URL}/videos`, movie)
       .then((response) => {})
       .catch((error) => {});
   };
